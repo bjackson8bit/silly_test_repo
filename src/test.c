@@ -5,7 +5,6 @@
 
 // Dereference pointer without checking if NULL
 int helper3(int* p) {
-    printf("wow\n");
     return *p + 4;
 }
 
@@ -24,12 +23,14 @@ int main(int argc, char* argv[]) {
         p2 = NULL;
     }
 
-    printf("amazing\n");
 
     printf("num1 + 4 is %d\n", helper3(p1));
     printf("num2 - 5 is %d\n", *p2);
 
     int* p3 = NULL;
+
+    int* p4 = NULL;
+    int c = *p4;
 
     return *p3;
 }
